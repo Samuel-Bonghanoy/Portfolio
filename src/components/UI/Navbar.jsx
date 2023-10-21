@@ -4,7 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Navbar() {
   return (
-    <div className="w-screen h-[12%] z-[51]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden">
+    <div className="w-full h-[12%] z-[51]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden">
       <img className="h-[50%] w-[10%] ml-[2%]" src={devLogo} />
       <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
         <div className="flex gap-8">
