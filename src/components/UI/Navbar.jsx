@@ -8,12 +8,16 @@ function Navbar() {
       <img className="h-[50%] w-[10%] ml-[2%]" src={devLogo} />
       <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
         <div className="flex gap-8">
-          <p>about</p>
-          <p>contact</p>
+          <p className="text-mainwhite">about</p>
+          <p className="text-mainwhite">contact</p>
         </div>
         <div className="flex gap-5">
-          <LinkedInIcon style={{ width: "2rem", height: "2rem" }} />
-          <GitHubIcon style={{ width: "2rem", height: "2rem" }} />
+          <LinkedInIcon
+            style={{ width: "2rem", height: "2rem", fill: "#f4f4f4" }}
+          />
+          <GitHubIcon
+            style={{ width: "2rem", height: "2rem", fill: "#f4f4f4" }}
+          />
         </div>
       </div>
     </div>
