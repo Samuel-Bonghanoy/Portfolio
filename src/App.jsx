@@ -1,10 +1,16 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./components/UI/AppLayout";
+import LandingPage from "./components/Landing Page/LandingPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <LandingPage />,
+      },
+    ],
   },
 ]);
 
