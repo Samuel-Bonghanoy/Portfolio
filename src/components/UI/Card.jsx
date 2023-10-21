@@ -19,7 +19,14 @@ function Card({ project }) {
         </h2>
         <p>{project.description}</p>
         <div className="card-actions justify-end">
-          <SendToMobileIcon />
+          <SendToMobileIcon
+            sx={{
+              width: "2rem",
+              height: "2rem",
+              fill: "#f4f4f4",
+              "&:hover": { fill: "#961418" },
+            }}
+          />
         </div>
       </div>
     </div>
