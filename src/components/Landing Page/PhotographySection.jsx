@@ -8,7 +8,7 @@ function PhotographySection() {
             Street, landscape, and architectural photography hobbyist
           </p>
         </div>
-        <div className="pb-[15%] self-center justify-self-end">
+        <div className="pb-[8%] self-center justify-self-end">
           <button className="rounded-lg border-4 border-solid  w-[12rem] px-3 py-3 border-maindark self-center justify-self-end text-lg font-bold hover:cursor-pointer duration-100 hover:border-crimson hover:text-crimson">
             view my gallery
           </button>
