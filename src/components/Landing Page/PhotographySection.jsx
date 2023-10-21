@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-
 function PhotographySection() {
   return (
     <>
