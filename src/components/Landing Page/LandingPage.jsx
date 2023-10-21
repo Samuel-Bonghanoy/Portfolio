@@ -1,4 +1,5 @@
 import DeveloperSection from "./DeveloperSection";
+import LandingDivider from "./LandingDivider";
 import PhotographySection from "./PhotographySection";
 
 function LandingPage() {
@@ -13,7 +14,9 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="h-[50vh] bg-subwhite  shadow-lg border-b border-r border-l border-2"></div>
+      <div className="h-[50vh] pt-5 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
+        <LandingDivider />
+      </div>
     </div>
   );
 }
