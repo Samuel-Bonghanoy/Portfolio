@@ -1,7 +1,7 @@
 function PhotographySection() {
   return (
     <>
-      <div className="pt-[17%] text-darktext flex flex-col h-[100%] justify-between">
+      <div className="pt-[17%] text-darktext flex flex-col h-[100%] justify-between shadow-maindark shadow-lg">
         <div className="flex flex-col gap-5 font-bold mx-auto">
           <h1 className="text-noto text-4xl font-bold">フォトグラファー</h1>
           <h1 className="font-black text-6xl ">photographer</h1>
@@ -10,7 +10,7 @@ function PhotographySection() {
             landscape, and architectural.
           </p>
           <div className="pt-[10%] justify-self-end">
-            <button className="rounded-lg border-4 border-solid text-mainwhite w-[12rem] px-2 py-3 border-maindark self-center justify-self-end text-lg font-bold bg-maindark hover:cursor-pointer duration-100 hover:shadow-slate-800 hover:scale-[1.05]">
+            <button className="rounded-lg border-4 shadow-maindark shadow-sm border-solid text-mainwhite w-[12rem] px-2 py-3 border-maindark self-center justify-self-end text-lg font-bold bg-maindark hover:cursor-pointer duration-100 hover:shadow-slate-800 hover:scale-[1.05]">
               view my gallery
             </button>
           </div>
