@@ -1,6 +1,8 @@
+import SendToMobileIcon from "@mui/icons-material/SendToMobile";
+
 function Card({ project }) {
   return (
-    <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col">
+    <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col text-mainwhite">
       <div className="h-52 bg">
         <img
           src={`../../../public/${project.imageUrl}`}
@@ -11,10 +13,14 @@ function Card({ project }) {
       <div className="card-body">
         <h2 className="card-title">
           {project.title}
-          {project.new && <div className="badge bg-crimson">NEW</div>}
+          {project.new && (
+            <div className="badge bg-crimson text-mainwhite h-full">NEW</div>
+          )}
         </h2>
         <p>{project.description}</p>
-        <div className="card-actions justify-end"></div>
+        <div className="card-actions justify-end">
+          <SendToMobileIcon />
+        </div>
       </div>
     </div>
   );
