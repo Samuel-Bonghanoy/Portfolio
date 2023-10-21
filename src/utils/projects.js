@@ -2,7 +2,8 @@ const projects = [
   {
     title: "Cabinscape",
     imageUrl: "cabinscape.png",
-    description: "A cabin reservation app for vacations and leisure",
+    description:
+      "A CRUD cabin reservation app for vacations and leisure using Supabase",
     tagOne: "React",
     tagTwo: "Supabase",
     new: true,
@@ -10,7 +11,8 @@ const projects = [
   {
     title: "Natoura",
     imageUrl: "natoura.png",
-    description: "A tour booking and tracking application",
+    description:
+      "An outdoor adventure and tour booking and tracking application",
     tagOne: "ExpressJS",
     tagTwo: "Pug",
     new: false,
