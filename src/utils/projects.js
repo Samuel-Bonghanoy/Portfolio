@@ -5,6 +5,7 @@ const projects = [
     description: "A cabin reservation app for vacations and leisure",
     tagOne: "React",
     tagTwo: "Supabase",
+    new: true,
   },
   {
     title: "Natoura",
@@ -12,6 +13,7 @@ const projects = [
     description: "A tour booking and tracking application",
     tagOne: "ExpressJS",
     tagTwo: "Pug",
+    new: false,
   },
   {
     title: "Kitsune",
@@ -19,6 +21,7 @@ const projects = [
     description: "A \full-stack blog app influenced by X",
     tagOne: "ExpressJS",
     tagTwo: "React",
+    new: false,
   },
 ];
 

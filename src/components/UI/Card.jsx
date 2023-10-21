@@ -1,4 +1,4 @@
-function Card() {
+function Card({ project }) {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -9,7 +9,7 @@ function Card() {
       </figure>
       <div className="card-body">
         <h2 className="card-title">
-          Shoes!
+          {project.title}
           <div className="badge badge-secondary">NEW</div>
         </h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>

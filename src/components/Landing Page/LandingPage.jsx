@@ -1,6 +1,8 @@
 import DeveloperSection from "./DeveloperSection";
 import LandingDivider from "./LandingDivider";
 import PhotographySection from "./PhotographySection";
+import projects from "../../utils/projects";
+import Card from "../UI/Card";
 
 function LandingPage() {
   return (
@@ -16,6 +18,11 @@ function LandingPage() {
 
       <div className="h-[50vh] pt-16 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
         <LandingDivider />
+        <div className="flex">
+          {projects.map((p) => (
+            <Card project={p} key={p.title} />
+          ))}
+        </div>
       </div>
     </div>
   );
