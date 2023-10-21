@@ -7,6 +7,7 @@ const projects = [
     tagOne: "React",
     tagTwo: "Supabase",
     new: true,
+    repo: "https://github.com/Samuel-Bonghanoy/Natoura",
   },
   {
     title: "Natoura",
@@ -16,6 +17,7 @@ const projects = [
     tagOne: "ExpressJS",
     tagTwo: "Pug",
     new: false,
+    repo: "https://github.com/Samuel-Bonghanoy/Cabinscape",
   },
   {
     title: "Kitsune",
@@ -25,6 +27,7 @@ const projects = [
     tagOne: "ExpressJS",
     tagTwo: "React",
     new: false,
+    repo: "https://github.com/Samuel-Bonghanoy/Kitsune",
   },
 ];
 
