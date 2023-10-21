@@ -12,17 +12,30 @@ function Navbar() {
           <p className="text-mainwhite">contact</p>
         </div>
         <div className="flex gap-5">
-          <a href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/">
+          <a
+            href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
+            className="hover:cursor-pointer"
+          >
             <LinkedInIcon
-              style={{ width: "2rem", height: "2rem", fill: "#f4f4f4" }}
+              sx={{
+                width: "2rem",
+                height: "2rem",
+                fill: "#f4f4f4",
+                "&:hover": { fill: "#961418" },
+              }}
             />
           </a>
           <a
             href="https://github.com/Samuel-Bonghanoy"
-            className="hover:cursor-pointer hover:fill"
+            className="hover:cursor-pointer"
           >
             <GitHubIcon
-              style={{ width: "2rem", height: "2rem", fill: "#f4f4f4" }}
+              sx={{
+                width: "2rem",
+                height: "2rem",
+                fill: "#f4f4f4",
+                "&:hover": { fill: "#961418" },
+              }}
             />
           </a>
         </div>
