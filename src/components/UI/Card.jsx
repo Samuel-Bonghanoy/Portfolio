@@ -19,7 +19,7 @@ function Card({ project }) {
         </h2>
         <p>{project.description}</p>
         <div className="card-actions justify-end">
-          <a>
+          <a href={project.repo}>
             <SendToMobileIcon
               sx={{
                 width: "2rem",
