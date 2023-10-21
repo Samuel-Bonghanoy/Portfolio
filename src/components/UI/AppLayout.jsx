@@ -3,10 +3,14 @@ import Navbar from "./Navbar";
 
 function AppLayout() {
   return (
-    <div className="h-screen w-screen">
+    <>
       <Circles />
-      <Navbar />
-    </div>
+      <div className="h-screen w-screen grid grid-cols-2">
+        <Navbar />
+        <div className="bg-mainwhite"></div>
+        <div className="bg-maindark"></div>
+      </div>
+    </>
   );
 }
 
