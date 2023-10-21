@@ -11,8 +11,8 @@ function Card({ project }) {
         </h2>
         <p>{project.description}</p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">{project.tagOne}</div>
-          <div className="badge badge-outline">{project.tagTwo}</div>
+          <div className="badge badge-primary">{project.tagOne}</div>
+          <div className="badge badge-accent">{project.tagTwo}</div>
         </div>
       </div>
     </div>
