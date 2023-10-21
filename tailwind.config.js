@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
+
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -35,5 +37,5 @@ export default {
       },
     },
   },
-  plugins: ["@tailwindcss/line-clamp"],
+  plugins: ["@tailwindcss/line-clamp", daisyui],
 };
