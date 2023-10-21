@@ -1,19 +1,20 @@
 function Card({ project }) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img src={`../../../public/${project.imageUrl}`} alt="Shoes" />
-      </figure>
+    <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col">
+      <div className="h-52 bg">
+        <img
+          src={`../../../public/${project.imageUrl}`}
+          alt="Shoes"
+          className="object-fit h-full"
+        />
+      </div>
       <div className="card-body">
         <h2 className="card-title">
           {project.title}
-          {project.new && <div className="badge badge-secondary">NEW</div>}
+          {project.new && <div className="badge bg-crimson">NEW</div>}
         </h2>
         <p>{project.description}</p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-primary">{project.tagOne}</div>
-          <div className="badge badge-accent">{project.tagTwo}</div>
-        </div>
+        <div className="card-actions justify-end"></div>
       </div>
     </div>
   );
