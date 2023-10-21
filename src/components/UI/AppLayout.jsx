@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 function AppLayout() {
   return (
-    <div>
+    <div className="h-screen">
       <Navbar />
     </div>
   );
