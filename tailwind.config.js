@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        midnight: "#202124",
+        maindark: "#222111",
+        mainwhite: "#f4f4f4",
+        darktext: "#333333",
+        graytext: "#757575",
       },
       fontFamily: {
         raleway: "Raleway, sans-serif",
