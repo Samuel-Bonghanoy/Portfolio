@@ -1,8 +1,10 @@
 function PhotographySection() {
   return (
-    <div className="mt-[20%] text-center flex flex-col">
+    <div className="mt-[20%] text-darktext flex flex-col items-center">
       <h1 className="font-black text-6xl">photographer</h1>
-      <p>Street, landscape, and architectural photography hobbyist</p>
+      <p className="mt-3">
+        Street, landscape, and architectural photography hobbyist
+      </p>
     </div>
   );
 }
