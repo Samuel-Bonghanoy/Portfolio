@@ -3,11 +3,11 @@ import PhotographySection from "./PhotographySection";
 
 function LandingPage() {
   return (
-    <div className="h-screen w-screen grid grid-cols-2">
-      <div className="bg-mainwhite ">
+    <div className="h-screen w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden">
+      <div className="bg-mainwhite hover:scale-[1.10] transition-all duration-500 z-50">
         <PhotographySection />
       </div>
-      <div className="bg-maindark">
+      <div className="bg-maindark hover:scale-[1.10] transition-all duration-500">
         <DeveloperSection />
       </div>
     </div>
