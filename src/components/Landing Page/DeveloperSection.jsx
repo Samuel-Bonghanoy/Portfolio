@@ -7,7 +7,8 @@ function DeveloperSection() {
             &lt;developer/&gt;
           </h1>
           <p className="text-gray-300 line-clamp-3 text-clip mx-auto max-w-[45ch]">
-            Computer Science student and aspiring fullstack web developer
+            Computer Science student and aspiring fullstack web developer in the
+            Philippines.
           </p>
         </div>
         <div className="pb-[8%] self-center justify-self-end">

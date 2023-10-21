@@ -4,8 +4,9 @@ function PhotographySection() {
       <div className="pt-[20%] text-darktext flex flex-col h-[100%] justify-between">
         <div className="flex flex-col gap-4">
           <h1 className="font-black text-6xl mx-auto">photographer</h1>
-          <p className="text-md mx-auto">
-            Street, landscape, and architectural photography hobbyist
+          <p className="text-md mx-auto max-w-[47ch]">
+            Recreational photography hobbyist whose subjects are mostly street,
+            landscape, and architectural.
           </p>
         </div>
         <div className="pb-[8%] self-center justify-self-end">
