@@ -7,7 +7,7 @@ import Card from "../UI/Card";
 function LandingPage() {
   return (
     <div className="overflow-x-hidden shadow-maindark">
-      <div className="h-[70vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
+      <div className="h-[75vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
         <div className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg">
           <PhotographySection />
         </div>
