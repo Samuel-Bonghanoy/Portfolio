@@ -1,7 +1,7 @@
 function DeveloperSection() {
   return (
     <>
-      <div className="pt-[17%] flex flex-col w-full h-[100%] justify-between">
+      <div className="pt-[17%] flex flex-col w-full h-[100%]justify-between">
         <div className="flex flex-col gap-5 mx-auto">
           <h1 className="text-noto text-4xl font-bold text-mainwhite">
             かいはつしゃ

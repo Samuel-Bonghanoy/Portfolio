@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 
 function AppLayout() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Circles />
       <Navbar />
       <Outlet />
-    </>
+    </div>
   );
 }
 
