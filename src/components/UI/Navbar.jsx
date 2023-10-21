@@ -8,8 +8,12 @@ function Navbar() {
       <img className="h-[50%] w-[10%] ml-[2%]" src={devLogo} />
       <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
         <div className="flex gap-8">
-          <p className="text-mainwhite">about</p>
-          <p className="text-mainwhite">contact</p>
+          <p className="text-mainwhite hover:cursor-pointer hover:text-crimson">
+            about
+          </p>
+          <p className="text-mainwhite hover:cursor-pointer hover:text-crimson">
+            contact
+          </p>
         </div>
         <div className="flex gap-5">
           <a
