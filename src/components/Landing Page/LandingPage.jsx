@@ -16,9 +16,9 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="h-[50vh] pt-16 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
+      <div className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
         <LandingDivider />
-        <div className="flex">
+        <div className="flex gap-6">
           {projects.map((p) => (
             <Card project={p} key={p.title} />
           ))}
