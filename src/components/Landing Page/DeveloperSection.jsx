@@ -6,7 +6,7 @@ function DeveloperSection() {
           <h1 className="text-noto text-4xl font-bold text-mainwhite">
             かいはつしゃ
           </h1>
-          <h1 className="text-mainwhite font-black text-6xl ">developer</h1>
+          <h1 className="text-mainwhite font-black text-6xl">developer</h1>
           <p className="text-gray-300 text-clip mt-2 max-w-[45ch]">
             Computer Science student and aspiring fullstack web developer based
             in the Philippines.

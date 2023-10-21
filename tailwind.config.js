@@ -5,9 +5,14 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        maindark:
+          "0 4px 6px -1px rgba(34, 33, 17, 0.1), 0 2px 4px -1px rgba(34, 33, 17, 0.06)",
+      },
       colors: {
         maindark: "#222111",
         mainwhite: "#f4f4f4",
+        subwhite: "#ffffff",
         darktext: "#333333",
         graytext: "#757575",
         crimson: "#961418",

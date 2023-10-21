@@ -3,7 +3,7 @@ import PhotographySection from "./PhotographySection";
 
 function LandingPage() {
   return (
-    <div className="overflow-x-hidden shadow-maindark shadow-lg">
+    <div className="overflow-x-hidden shadow-maindark">
       <div className="h-[70vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
         <div className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.18] transition-all duration-500 z-50 shadow-maindark shadow-lg">
           <PhotographySection />
@@ -12,7 +12,8 @@ function LandingPage() {
           <DeveloperSection />
         </div>
       </div>
-      <div className="h-[50vh] bg-mainwhite "></div>
+
+      <div className="h-[50vh] bg-subwhite  shadow-lg border-b border-r border-l border-2"></div>
     </div>
   );
 }
