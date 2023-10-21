@@ -14,7 +14,7 @@ function DeveloperSection() {
             Philippines.
           </p>
           <div className="pt-[10%] justify-self-end">
-            <button className="rounded-lg border-4 border-solid text-maindark  w-[12rem] px-2 py-3 border-mainwhite self-center justify-self-end text-lg font-black bg-mainwhite hover:cursor-pointer duration-100 hover:border-crimson hover:text-crimson">
+            <button className="rounded-lg border-4 border-solid text-maindark  w-[12rem] px-2 py-3 border-mainwhite self-center justify-self-end text-lg font-black bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite hover:scale-[1.05]">
               view my portfolio
             </button>
           </div>
