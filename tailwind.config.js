@@ -8,6 +8,7 @@ export default {
         mainwhite: "#f4f4f4",
         darktext: "#333333",
         graytext: "#757575",
+        crimson: "#961418",
       },
       fontFamily: {
         raleway: "Raleway, sans-serif",
