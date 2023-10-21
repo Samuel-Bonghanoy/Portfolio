@@ -9,8 +9,8 @@ function PhotographySection() {
           </p>
         </div>
         <div className="pb-[15%] self-center justify-self-end">
-          <button className="rounded-lg border border-4 border-solid  w-[12rem] px-3 py-3 border-maindark self-center justify-self-end text-lg font-black">
-            View my gallery
+          <button className="rounded-lg border-4 border-solid  w-[12rem] px-3 py-3 border-maindark self-center justify-self-end text-lg font-black">
+            view my gallery
           </button>
         </div>
       </div>
