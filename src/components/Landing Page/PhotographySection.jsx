@@ -1,7 +1,7 @@
 function PhotographySection() {
   return (
-    <div>
-      <h1>photographer</h1>
+    <div className="mt-[20%] text-center flex flex-col">
+      <h1 className="font-black text-5xl">photographer</h1>
       <p>Street, landscape, and architectural photography hobbyist</p>
     </div>
   );
