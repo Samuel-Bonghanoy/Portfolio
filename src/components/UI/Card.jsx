@@ -2,7 +2,7 @@ import SendToMobileIcon from "@mui/icons-material/SendToMobile";
 
 function Card({ project }) {
   return (
-    <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col text-mainwhite hover:scale-[1.03] transition-all duration-300">
+    <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col text-mainwhite hover:scale-[1.03] transition-all duration-300 hover:shadow-gray-400">
       <div className="h-52 bg">
         <img
           src={`../../../public/${project.imageUrl}`}
