@@ -7,7 +7,7 @@ function Card({ project }) {
         <img
           src={`../../../public/${project.imageUrl}`}
           alt="Shoes"
-          className="object-fit h-full"
+          className="object-fit w-full h-full"
         />
       </div>
       <div className="card-body">
