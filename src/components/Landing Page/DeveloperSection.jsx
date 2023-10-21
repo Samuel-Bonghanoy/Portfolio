@@ -11,7 +11,7 @@ function DeveloperSection() {
           </p>
         </div>
         <div className="pb-[15%] self-center justify-self-end">
-          <button className="rounded-lg border-4 text-mainwhite font-bold border-mainwhite border-solid w-[12rem] px-3 py-3 self-center justify-self-end text-lg ">
+          <button className="rounded-lg border-4 text-mainwhite font-bold border-mainwhite border-solid w-[12rem] px-3 py-3 self-center justify-self-end text-lg hover:cursor-pointer duration-100 hover:border-crimson hover:text-crimson">
             view my portfolio
           </button>
         </div>
