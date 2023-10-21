@@ -2,7 +2,14 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        midnight: "#202124",
+      },
+      fontFamily: {
+        raleway: "Raleway, sans-serif",
+      },
+    },
   },
   plugins: [],
 };
