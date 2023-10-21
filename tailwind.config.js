@@ -11,6 +11,7 @@ export default {
         crimson: "#961418",
       },
       fontFamily: {
+        noto: "'Noto Sans JP', sans-serif",
         raleway: "Raleway, sans-serif",
       },
       animation: {
