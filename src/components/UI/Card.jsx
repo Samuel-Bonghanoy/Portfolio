@@ -5,7 +5,7 @@ function Card({ project }) {
     <div className="rounded-md w-96 bg-maindark shadow-xl flex flex-col text-mainwhite hover:scale-[1.03] transition-all duration-300 hover:shadow-gray-400">
       <div className="h-52 bg">
         <img
-          src={`../../../static/${project.imageUrl}`}
+          src={`/kitsune.png`}
           alt="App Logo"
           className="object-fit w-full h-full"
         />
