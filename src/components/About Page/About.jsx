@@ -1,6 +1,5 @@
-import DeveloperSection from "../Landing Page/DeveloperSection";
-
 import Header from "./Header";
+import Hero from "./Hero";
 
 function About() {
   return (
@@ -11,7 +10,7 @@ function About() {
             <Header />
           </div>
           <div className="bg-maindark transition-all duration-500 z-50 shadow-maindark shadow-lg">
-            <DeveloperSection />
+            <Hero />
           </div>
         </div>
       </div>
