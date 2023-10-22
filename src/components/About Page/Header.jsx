@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <div className="pt-[30%] text-darktext flex flex-col h-[100%] justify-between shadow-mainwhite shadow-lg">
+      <div className="pt-[20%] text-darktext flex flex-col h-[100%] justify-between shadow-mainwhite shadow-lg">
         <div className="flex flex-col gap-5 font-bold mx-auto">
           <h1 className="text-noto text-5xl font-bold">バックグラウンド</h1>
           <h1 className="font-black text-8xl ">about.</h1>
