@@ -7,10 +7,12 @@ function Header() {
           <h1 className="font-black text-8xl mb-3">about.</h1>
           <p className="text-lg text-graytext mt-2 max-w-[64ch] font-normal">
             Learn more about me and my various experiences in the world of
-            software and technology.
+            software and technology. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Enim consequuntur illo repudiandae quos optio quod
+            sit itaque voluptas quidem tenetur. Quidem, officiis officia.
           </p>
 
-          <p className="text-lg text-graytext mt-2 max-w-[47ch] font-normal">
+          <p className="text-lg text-graytext mt-2 max-w-[64ch] font-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             esse, ipsam autem alias nobis accusamus incidunt aspernatur repellat
             deleniti corporis quia enim mollitia explicabo quis, reiciendis
