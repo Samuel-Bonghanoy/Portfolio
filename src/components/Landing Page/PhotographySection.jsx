@@ -1,7 +1,7 @@
 function PhotographySection() {
   return (
     <>
-      <div className="pt-[17%] text-darktext flex flex-col h-[100%] justify-between shadow-maindark shadow-lg">
+      <div className="pt-[17%] text-darktext flex flex-col h-[100%] justify-between shadow-mainwhite shadow-lg">
         <div className="flex flex-col gap-5 font-bold mx-auto">
           <h1 className="text-noto text-4xl font-bold">フォトグラファー</h1>
           <h1 className="font-black text-6xl ">photographer</h1>
