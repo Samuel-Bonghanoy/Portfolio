@@ -1,16 +1,21 @@
 import devLogo from "../../assets/Dev_logo_red_o.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="w-full h-[12%] z-[70]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden">
-      <img className="h-[50%] w-[10%] ml-[2%]" src={devLogo} />
+      <NavLink to="/">
+        <img className="h-[50%] w-[10%] ml-[2%]" src={devLogo} />
+      </NavLink>
       <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
         <div className="flex gap-8">
-          <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
-            about
-          </p>
+          <NavLink to="/about">
+            <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
+              about
+            </p>
+          </NavLink>
           <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
             contact
           </p>
