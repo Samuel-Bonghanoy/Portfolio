@@ -5,7 +5,7 @@ function PhotographySection() {
         <div className="flex flex-col gap-5 font-bold mx-auto">
           <h1 className="text-noto text-4xl font-bold">フォトグラファー</h1>
           <h1 className="font-black text-6xl ">photographer</h1>
-          <p className="text-md mt-2 max-w-[47ch]">
+          <p className="text-md text-graytext mt-2 max-w-[47ch] font-normal">
             Recreational photography hobbyist whose subjects are mostly street,
             landscape, and architectural.
           </p>
