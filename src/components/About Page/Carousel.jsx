@@ -1,60 +1,48 @@
 function Carousel() {
   return (
-    <div>
-      <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img src="" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="https://www.pexels.com/photo/photo-of-classic-car-parked-on-dirt-road-14701288/"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="https://www.pexels.com/photo/photo-of-classic-car-parked-on-dirt-road-14701288/"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="https://www.pexels.com/photo/photo-of-classic-car-parked-on-dirt-road-14701288/"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
+    <div className="carousel carousel-center rounded-box w-[10rem]">
+      <div className="carousel-item">
+        <img
+          src="/photography.jpg"
+          alt="Pizza"
+          className="w-fit h-fit object-contain"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+          alt="Pizza"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+          alt="Pizza"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
+          alt="Pizza"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+          alt="Pizza"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
+          alt="Pizza"
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+          alt="Pizza"
+        />
       </div>
     </div>
   );

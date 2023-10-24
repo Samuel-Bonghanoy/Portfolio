@@ -1,10 +1,9 @@
 import Header from "./Header";
 import Hero from "./Hero";
-import LandingDivider from "../Landing Page/LandingDivider";
-import projects from "../../utils/projects";
-import Card from "../UI/Card";
-import Footer from "../Landing Page/Footer";
-import Carousel from "./Carousel";
+// import LandingDivider from "../Landing Page/LandingDivider";
+// import projects from "../../utils/projects";
+// import Card from "../UI/Card";
+// import Footer from "../Landing Page/Footer";
 
 function About() {
   return (
@@ -19,11 +18,15 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="h-full w-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
+      {/* <div className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
         <LandingDivider />
-        <Carousel />
+        <div className="flex gap-6">
+          {projects.map((p) => (
+            <Card project={p} key={p.title} />
+          ))}
+        </div>
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
