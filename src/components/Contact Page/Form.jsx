@@ -10,41 +10,40 @@ function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto w-[80%] h-[50%] flex gap-3"
+      className="mx-auto w-[80%] h-fit flex flex-col gap-3"
     >
-      <div className="flex flex-col w-full h-full">
-        <div className="flex flex-col mb-[8%] gap-2">
-          <label htmlFor="email">Email Address</label>
-          <input
-            className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
-            aria-label="Email"
-            id="email"
-            type="email"
-            value={email}
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <label htmlFor="name">Full Name</label>
-          <input
-            className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
-            aria-label="Name"
-            type="text"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="email">Email Address</label>
+        <input
+          className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
+          aria-label="Email"
+          id="email"
+          type="email"
+          value={email}
+          name="email"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
       </div>
 
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col gap-2">
+        <label htmlFor="name">Full Name</label>
+        <input
+          className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
+          aria-label="Name"
+          type="text"
+          name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+      </div>
+
+      <div className="flex flex-col w-full gap-2 h-full">
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <label htmlFor="Message">Message</label>
         <textarea
+          className="rounded-md px-3 py-2 bg-mainwhite text-maindark h-full"
           aria-label="Message"
           id="message"
           name="message"
