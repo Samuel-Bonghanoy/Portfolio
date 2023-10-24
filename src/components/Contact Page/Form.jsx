@@ -8,11 +8,15 @@ function Form() {
   const [message, setMessage] = useState("");
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto w-fit flex  gap-3">
-      <div className="flex flex-col">
-        <div className="flex flex-col">
+    <form
+      onSubmit={handleSubmit}
+      className="mx-auto w-[80%] h-[50%] flex gap-3"
+    >
+      <div className="flex flex-col w-full h-full">
+        <div className="flex flex-col gap-[10%]">
           <label htmlFor="email">Email Address</label>
           <input
+            className="rounded-md px-3 py-2 bg-mainwhite"
             aria-label="Email"
             id="email"
             type="email"
@@ -36,7 +40,7 @@ function Form() {
         </div>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full">
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <label htmlFor="Message">Message</label>
         <textarea
