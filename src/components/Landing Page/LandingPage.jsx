@@ -44,14 +44,19 @@ function LandingPage() {
         </motion.div>
       </div>
 
-      <div className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
+      <motion.div
+        initial={{ opacity: 0, y: "20%" }}
+        animate={{ opacity: 1, y: 0, transition: { duration: 0.55 } }}
+        exit={{ opacity: 0, x: -150 }}
+        className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center"
+      >
         <LandingDivider />
         <div className="flex gap-6">
           {projects.map((p) => (
             <Card project={p} key={p.title} />
           ))}
         </div>
-      </div>
+      </motion.div>
       <Footer />
     </motion.div>
   );
