@@ -21,7 +21,7 @@ function Form() {
         onSubmit={handleSubmit}
         className="mx-auto w-[80%] h-fit flex flex-col gap-3"
       >
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label className="font-semibold" htmlFor="email">
             Email Address
           </label>
@@ -37,7 +37,7 @@ function Form() {
           />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label className="font-semibold" htmlFor="name">
             Full Name
           </label>
@@ -52,7 +52,7 @@ function Form() {
           />
         </div>
 
-        <div className="flex flex-col w-full gap-2 h-full">
+        <div className="flex flex-col w-full gap-1 h-full">
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           <label className="font-semibold" htmlFor="Message">
             Message
