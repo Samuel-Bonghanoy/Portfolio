@@ -4,16 +4,36 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { motion } from "framer-motion";
+import { useAnimate, stagger } from "framer-motion";
+import { useEffect } from "react";
 
 function SocialMedia() {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    animate(
+      "li",
+      { opacity: 1, scale: 1 },
+      { delay: stagger(0.15, { from: "first" }) }
+    );
+  });
+
   return (
     <motion.ul
+      ref={scope}
       variants={{
-        visible: { transition: { staggerChildren: 0.05 } },
+        visible: { transition: { staggerChildren: 0.5 } },
       }}
+      initial="visible"
+      transition={{ staggerChildren: 0.5 }}
       className="mt-2 flex gap-5 w-[80%] items-start mx-auto"
     >
-      <motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring", duration: 2 }}
+      >
         <a
           href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
           className="hover:cursor-pointer"
@@ -28,7 +48,12 @@ function SocialMedia() {
           />
         </a>
       </motion.li>
-      <motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring" }}
+      >
         <a
           href="https://github.com/Samuel-Bonghanoy"
           className="hover:cursor-pointer"
@@ -43,7 +68,12 @@ function SocialMedia() {
           />
         </a>
       </motion.li>
-      <motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring" }}
+      >
         <a
           href="https://www.instagram.com/sampeoplewantitall/"
           className="hover:cursor-pointer"
@@ -58,7 +88,12 @@ function SocialMedia() {
           />
         </a>
       </motion.li>
-      <motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring" }}
+      >
         <a
           href="https://www.facebook.com/Sampeoplewantitall/"
           className="hover:cursor-pointer"
@@ -73,7 +108,12 @@ function SocialMedia() {
           />
         </a>
       </motion.li>
-      <motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring" }}
+      >
         <a
           href="https://twitter.com/NotSamBonghanoy"
           className="hover:cursor-pointer"
