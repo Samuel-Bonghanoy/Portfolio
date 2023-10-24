@@ -16,9 +16,11 @@ function Navbar() {
               about
             </p>
           </NavLink>
-          <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
-            contact
-          </p>
+          <NavLink to="/contact">
+            <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
+              contact
+            </p>
+          </NavLink>
         </div>
         <div className="flex gap-5">
           <a
