@@ -11,13 +11,31 @@ function Navbar() {
       </NavLink>
       <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
         <div className="flex gap-8">
-          <NavLink to="/about">
-            <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
+          <NavLink
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? "pending text-mainwhite" : "",
+                isActive ? "active text-crimson" : "text-mainwhite",
+                isTransitioning ? "transitioning text-mainwhite" : "",
+              ].join(" ")
+            }
+            to="/about"
+          >
+            <p className="duration-100 hover:cursor-pointer hover:text-crimson">
               about
             </p>
           </NavLink>
-          <NavLink to="/contact">
-            <p className="text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
+          <NavLink
+            to="/contact"
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? "pending text-mainwhite" : "",
+                isActive ? "active text-crimson" : "text-mainwhite",
+                isTransitioning ? "transitioning text-mainwhite" : "",
+              ].join(" ")
+            }
+          >
+            <p className=" duration-100 hover:cursor-pointer hover:text-crimson">
               contact
             </p>
           </NavLink>
