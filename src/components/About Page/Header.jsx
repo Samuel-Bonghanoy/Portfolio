@@ -6,20 +6,22 @@ function Header() {
           <h1 className="text-noto text-6xl font-bold">バックグラウンド</h1>
           <h1 className="font-black text-8xl mb-3">about.</h1>
           <p className="text-lg text-graytext mt-2 max-w-[64ch] font-normal">
-            I am a Computer Science student in the University of San Carlos, and
-            an aspiring{" "}
+            I am a Computer Science student from the University of San Carlos,
+            and an aspiring{" "}
             <strong className="text-crimson font-bold">
               Fullstack Web Developer
             </strong>{" "}
-            based in Cebu. My main hobby in my free time is photography, photo
-            editing, video editing, and alot of things that have to do with
-            visual design.
+            based in Cebu. My main hobbies in my free time are photography,
+            photo editing, video editing, and alot of things that have to do
+            with visual design.
           </p>
 
-          <p className="text-lg text-graytext mt-2 max-w-[64ch] font-normal">
+          <p className="text-lg text-gray-600 mt-2 max-w-[64ch] font-normal">
             I am constantly looking for opportunities to learn, to hone my
-            skills, and to connect with other people. As a student, I am very
-            active in extracurricular organizations to help grow my portfolio.
+            skills, and to connect with other people as a developer. Seeking out
+            opportunities to grow my portfolio, I can often be seen
+            participating and even hosting extracurricular events with various
+            organizations within my school.
           </p>
         </div>
       </div>
