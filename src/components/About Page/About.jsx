@@ -4,9 +4,7 @@ import LandingDivider from "../Landing Page/LandingDivider";
 
 import projects from "../../utils/projects";
 import Card from "../UI/Card";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
 import Footer from "../Landing Page/Footer";
 
 function About() {
