@@ -7,8 +7,13 @@ import { motion } from "framer-motion";
 
 function SocialMedia() {
   return (
-    <motion.ul className="mt-2 flex gap-5 w-[80%] items-start mx-auto">
-      <li>
+    <motion.ul
+      variants={{
+        visible: { transition: { staggerChildren: 0.05 } },
+      }}
+      className="mt-2 flex gap-5 w-[80%] items-start mx-auto"
+    >
+      <motion.li>
         <a
           href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
           className="hover:cursor-pointer"
@@ -22,8 +27,8 @@ function SocialMedia() {
             }}
           />
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li>
         <a
           href="https://github.com/Samuel-Bonghanoy"
           className="hover:cursor-pointer"
@@ -37,8 +42,8 @@ function SocialMedia() {
             }}
           />
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li>
         <a
           href="https://www.instagram.com/sampeoplewantitall/"
           className="hover:cursor-pointer"
@@ -52,8 +57,8 @@ function SocialMedia() {
             }}
           />
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li>
         <a
           href="https://www.facebook.com/Sampeoplewantitall/"
           className="hover:cursor-pointer"
@@ -67,8 +72,8 @@ function SocialMedia() {
             }}
           />
         </a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li>
         <a
           href="https://twitter.com/NotSamBonghanoy"
           className="hover:cursor-pointer"
@@ -82,7 +87,7 @@ function SocialMedia() {
             }}
           />
         </a>
-      </li>
+      </motion.li>
     </motion.ul>
   );
 }
