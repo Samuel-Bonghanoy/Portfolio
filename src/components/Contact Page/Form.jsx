@@ -14,6 +14,9 @@ function Form() {
 
   return (
     <>
+      <h1 className="w-[80%] mx-auto text-3xl mb-[1rem] text-mainwhite font-bold">
+        Send me an email
+      </h1>
       <form
         onSubmit={handleSubmit}
         className="mx-auto w-[80%] h-fit flex flex-col gap-3"
@@ -78,16 +81,21 @@ function Form() {
           Submit
         </button>
       </form>
+      <div className="mt-3 flex w-[80%] mx-auto flex-col border-white">
+        <div className="divider text-mainwhitefont font-semibold before:bg-mainwhite after:bg-mainwhite ">
+          Or contact me via social media
+        </div>
+      </div>
 
-      <div className="flex gap-5 w-[80%] items-start mx-auto">
+      <div className="mt-2 flex gap-5 w-[80%] items-start mx-auto">
         <a
           href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
           className="hover:cursor-pointer"
         >
           <LinkedInIcon
             sx={{
-              width: "2rem",
-              height: "2rem",
+              width: "2.7rem",
+              height: "2.7rem",
               fill: "#f4f4f4",
               "&:hover": { fill: "#961418" },
             }}
@@ -99,8 +107,8 @@ function Form() {
         >
           <GitHubIcon
             sx={{
-              width: "2rem",
-              height: "2rem",
+              width: "2.7rem",
+              height: "2.7rem",
               fill: "#f4f4f4",
               "&:hover": { fill: "#961418" },
             }}
@@ -112,8 +120,8 @@ function Form() {
         >
           <InstagramIcon
             sx={{
-              width: "2rem",
-              height: "2rem",
+              width: "2.7rem",
+              height: "2.7rem",
               fill: "#f4f4f4",
               "&:hover": { fill: "#961418" },
             }}
@@ -125,8 +133,8 @@ function Form() {
         >
           <FacebookIcon
             sx={{
-              width: "2rem",
-              height: "2rem",
+              width: "2.7rem",
+              height: "2.7rem",
               fill: "#f4f4f4",
               "&:hover": { fill: "#961418" },
             }}
@@ -138,8 +146,8 @@ function Form() {
         >
           <TwitterIcon
             sx={{
-              width: "2rem",
-              height: "2rem",
+              width: "2.7rem",
+              height: "2.7rem",
               fill: "#f4f4f4",
               "&:hover": { fill: "#961418" },
             }}
