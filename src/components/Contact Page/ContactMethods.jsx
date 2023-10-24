@@ -2,7 +2,7 @@ import Form from "./Form";
 
 function ContactMethods() {
   return (
-    <div>
+    <div className="pt-[17%]">
       <Form />
     </div>
   );

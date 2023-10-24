@@ -1,4 +1,5 @@
 import ContactHeader from "./ContactHeader";
+import ContactMethods from "./ContactMethods";
 
 function Contact() {
   return (
@@ -7,7 +8,9 @@ function Contact() {
         <div className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg hover:scale-[1.01] hover:scale-x-[1.02] hover:z-[60]">
           <ContactHeader />
         </div>
-        <div className="bg-maindark transition-all duration-500 z-50 shadow-maindark shadow-lg sticky"></div>
+        <div className="bg-maindark transition-all duration-500 z-50 shadow-maindark shadow-lg sticky">
+          <ContactMethods />
+        </div>
       </div>
     </div>
   );
