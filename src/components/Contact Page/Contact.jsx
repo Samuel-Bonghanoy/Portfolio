@@ -21,9 +21,13 @@ function Contact() {
             <ContactHeader />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 200 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
-            exit={{ opacity: 0, x: 200 }}
+            variants={{
+              hidden: { opacity: 0, x: 200 },
+              visible: { opacity: 1, x: 0, transition: { duration: 0.1 } },
+            }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
             className="bg-maindark h-full transition-all duration-500 z-50 shadow-maindark shadow-lg sticky"
           >
             <ContactMethods />
