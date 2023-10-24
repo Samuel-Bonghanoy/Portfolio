@@ -1,10 +1,8 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import LandingDivider from "../Landing Page/LandingDivider";
-
 import projects from "../../utils/projects";
 import Card from "../UI/Card";
-
 import Footer from "../Landing Page/Footer";
 
 function About() {
