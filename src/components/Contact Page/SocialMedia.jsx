@@ -13,7 +13,7 @@ function SocialMedia() {
   useEffect(() => {
     animate(
       "li",
-      { opacity: 1, scale: 1 },
+      { opacity: [0, 1], scale: [0.5, 1] },
       { delay: stagger(0.15, { from: "first" }) }
     );
   });
