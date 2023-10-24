@@ -13,10 +13,10 @@ function Form() {
       className="mx-auto w-[80%] h-[50%] flex gap-3"
     >
       <div className="flex flex-col w-full h-full">
-        <div className="flex flex-col gap-[10%]">
+        <div className="flex flex-col mb-[8%] gap-2">
           <label htmlFor="email">Email Address</label>
           <input
-            className="rounded-md px-3 py-2 bg-mainwhite"
+            className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
             aria-label="Email"
             id="email"
             type="email"
@@ -27,9 +27,10 @@ function Form() {
           />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <label htmlFor="name">Full Name</label>
           <input
+            className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
             aria-label="Name"
             type="text"
             name="name"
