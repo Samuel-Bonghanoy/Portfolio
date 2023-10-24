@@ -25,7 +25,7 @@ function LandingPage() {
             zIndex: 60,
             transition: { duration: 0.05 },
           }}
-          className="bg-mainwhite  transition-all duration-300 z-50  shadow-maindark shadow-lg"
+          className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg"
         >
           <PhotographySection />
         </motion.div>
@@ -38,7 +38,7 @@ function LandingPage() {
             zIndex: 60,
             transition: { duration: 0.05 },
           }}
-          className="bg-maindark transition-all duration-300 z-49 hover:z-[60] shadow-maindark shadow-lg"
+          className="bg-maindark transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg"
         >
           <DeveloperSection />
         </motion.div>
