@@ -23,7 +23,7 @@ const projects = [
     title: "Kitsune",
     imageUrl: "kitsune.png",
     description:
-      "A full-stack blog appin influenced by X and built with the MERN stack",
+      "A full-stack blog app influenced by X and built with the MERN stack",
     tagOne: "ExpressJS",
     tagTwo: "React",
     new: false,
