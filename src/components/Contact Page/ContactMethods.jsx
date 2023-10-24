@@ -2,7 +2,7 @@ import Form from "./Form";
 
 function ContactMethods() {
   return (
-    <div className="pt-[17%] h-full">
+    <div className="pt-[15%] h-full">
       <Form />
     </div>
   );

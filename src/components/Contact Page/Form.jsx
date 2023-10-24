@@ -13,7 +13,9 @@ function Form() {
       className="mx-auto w-[80%] h-fit flex flex-col gap-3"
     >
       <div className="flex flex-col gap-2">
-        <label htmlFor="email">Email Address</label>
+        <label className="font-semibold" htmlFor="email">
+          Email Address
+        </label>
         <input
           className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
           aria-label="Email"
@@ -27,7 +29,9 @@ function Form() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="name">Full Name</label>
+        <label className="font-semibold" htmlFor="name">
+          Full Name
+        </label>
         <input
           className="rounded-md px-3 py-2 bg-mainwhite text-maindark"
           aria-label="Name"
@@ -41,13 +45,16 @@ function Form() {
 
       <div className="flex flex-col w-full gap-2 h-full">
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <label htmlFor="Message">Message</label>
+        <label className="font-semibold" htmlFor="Message">
+          Message
+        </label>
         <textarea
-          className="rounded-md px-3 py-2 bg-mainwhite text-maindark h-full"
+          className="rounded-md px-3 py-2 bg-mainwhite text-maindark h-[7em]"
           aria-label="Message"
           id="message"
           name="message"
           value={message}
+          style={{ overflow: "hidden", resize: "none" }}
           onChange={(e) => setMessage(e.target.value)}
           required
         />
@@ -57,7 +64,11 @@ function Form() {
           errors={state.errors}
         />
       </div>
-      <button type="submit" disabled={state.submitting || state.succeeded}>
+      <button
+        className="self-end mt-2 bg-crimson w-[20%] text-mainwhite rounded-md px-4 py-[0.6rem]"
+        type="submit"
+        disabled={state.submitting || state.succeeded}
+      >
         Submit
       </button>
     </form>
