@@ -5,9 +5,11 @@ import projects from "../../utils/projects";
 import Card from "../UI/Card";
 import Footer from "./Footer";
 
+import { motion } from "framer-motion";
+
 function LandingPage() {
   return (
-    <div className="overflow-x-hidden shadow-maindark">
+    <motion.div initial className="overflow-x-hidden shadow-maindark">
       <div className="h-[75vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
         <div className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg">
           <PhotographySection />
@@ -26,7 +28,7 @@ function LandingPage() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
