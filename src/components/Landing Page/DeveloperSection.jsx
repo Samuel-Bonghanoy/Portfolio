@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function DeveloperSection() {
   return (
     <>
@@ -12,9 +14,13 @@ function DeveloperSection() {
             in the Philippines.
           </p>
           <div className="pt-[10%] justify-self-end">
-            <button className="rounded-lg border-4 border-solid text-maindark w-[12rem] px-2 py-3 shadow-mainwhite shadow-sm border-mainwhite self-center justify-self-end text-lg font-bold bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite hover:scale-[1.05]">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 500 }}
+              className="rounded-lg border-4 border-solid text-maindark w-[12rem] px-2 py-3 shadow-mainwhite shadow-sm border-mainwhite self-center justify-self-end text-lg font-bold bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite "
+            >
               view my portfolio
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

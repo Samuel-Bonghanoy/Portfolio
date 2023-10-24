@@ -20,7 +20,12 @@ function LandingPage() {
           initial={{ opacity: 0, x: -250 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
           exit={{ opacity: 0, x: -250 }}
-          className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg"
+          whileHover={{
+            scale: 1.15,
+            zIndex: 60,
+            transition: { duration: 0.05 },
+          }}
+          className="bg-mainwhite  transition-all duration-300 z-50  shadow-maindark shadow-lg"
         >
           <PhotographySection />
         </motion.div>
@@ -28,7 +33,12 @@ function LandingPage() {
           initial={{ opacity: 0, x: 250 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
           exit={{ opacity: 0, x: 250 }}
-          className="bg-maindark hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg"
+          whileHover={{
+            scale: 1.15,
+            zIndex: 60,
+            transition: { duration: 0.05 },
+          }}
+          className="bg-maindark transition-all duration-300 z-49 hover:z-[60] shadow-maindark shadow-lg"
         >
           <DeveloperSection />
         </motion.div>
