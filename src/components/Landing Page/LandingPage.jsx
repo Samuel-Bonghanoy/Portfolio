@@ -9,14 +9,29 @@ import { motion } from "framer-motion";
 
 function LandingPage() {
   return (
-    <motion.div initial className="overflow-x-hidden shadow-maindark">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1.5 } }}
+      exit={{ opacity: 0 }}
+      className="overflow-x-hidden shadow-maindark"
+    >
       <div className="h-[75vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
-        <div className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg">
+        <motion.div
+          initial={{ opacity: 0, x: -250 }}
+          animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
+          exit={{ opacity: 0, x: -250 }}
+          className="bg-mainwhite hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg"
+        >
           <PhotographySection />
-        </div>
-        <div className="bg-maindark hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 250 }}
+          animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
+          exit={{ opacity: 0, x: 250 }}
+          className="bg-maindark hover:scale-[1.10] hover:scale-x-[1.15] transition-all duration-500 z-50 hover:z-[60] shadow-maindark shadow-lg"
+        >
           <DeveloperSection />
-        </div>
+        </motion.div>
       </div>
 
       <div className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center">
