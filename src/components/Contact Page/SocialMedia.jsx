@@ -14,7 +14,7 @@ function SocialMedia() {
     animate(
       "li",
       { opacity: [0, 1], scale: [0.5, 1] },
-      { delay: stagger(0.15, { from: "first" }) }
+      { delay: stagger(0.21, { from: "first" }) }
     );
   });
 
