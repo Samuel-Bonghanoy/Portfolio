@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 function PhotographySection() {
   return (
@@ -12,13 +13,15 @@ function PhotographySection() {
             landscape, and architectural.
           </p>
           <div className="pt-[10%] justify-self-end">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 500 }}
-              className="rounded-lg border-4 shadow-maindark shadow-sm border-solid text-mainwhite w-[12rem] px-2 py-3 border-maindark self-center justify-self-end text-lg font-bold bg-maindark hover:cursor-pointer duration-100 hover:shadow-slate-800 hover:scale-[1.05]"
-            >
-              view my gallery
-            </motion.button>
+            <NavLink to="/gallery">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
+                className="rounded-lg border-4 shadow-maindark shadow-sm border-solid text-mainwhite w-[12rem] px-2 py-3 border-maindark self-center justify-self-end text-lg font-bold bg-maindark hover:cursor-pointer duration-100 hover:shadow-slate-800 hover:scale-[1.05]"
+              >
+                view my gallery
+              </motion.button>
+            </NavLink>
           </div>
         </div>
       </div>
