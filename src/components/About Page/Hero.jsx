@@ -9,7 +9,7 @@ function DeveloperSection() {
           effect="blur"
           src="/samuel.png"
           loading="lazy"
-          className="h-[80%]"
+          className="h-[80%] self-center justify-self-center mx-auto"
         />
       </div>
     </>

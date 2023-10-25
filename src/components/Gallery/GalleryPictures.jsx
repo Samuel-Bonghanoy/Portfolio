@@ -90,39 +90,39 @@ function GalleryPictures() {
         </div>
         {/* 4 */}
         <div className="flex flex-col gap-4">
-          <div className="h-fit rounded-lg">
+          <div className="h-[35%] rounded-lg">
             <LazyLoadImage
-              src={hp3}
-              className="h-fit rounded-lg"
+              src={grass}
+              className="h-full rounded-lg"
             ></LazyLoadImage>
           </div>
-          <div className="h-[20%] w-full rounded-lg object-fit">
+          <div className="h-[30%] w-full rounded-lg object-fit">
             <LazyLoadImage
               src={clock}
-              className="h-fit w-full object-cover rounded-lg"
+              className="h-full w-full object-cover rounded-lg"
             ></LazyLoadImage>
           </div>
-          <div className="h-fit w-full rounded-lg">
+          <div className="h-[35%] w-full rounded-lg">
             <LazyLoadImage
               src={hp1}
               className="h-full w-full rounded-lg object-contain"
             ></LazyLoadImage>
           </div>
         </div>
-        <div className="flex flex-col  gap-4">
-          <div className="h-full w-full rounded-lg">
+        <div className="flex flex-col gap-4">
+          <div className="h-[45%] w-full rounded-lg">
             <LazyLoadImage
-              src={grass}
+              src={hp3}
               className="h-full w-full rounded-lg object-contain"
             ></LazyLoadImage>
           </div>
-          <div className="h-full w-full rounded-lg">
+          <div className="h-[25%] w-full rounded-lg">
             <LazyLoadImage
-              src={spicy}
+              src={clock}
               className="h-full w-full rounded-lg object-contain"
             ></LazyLoadImage>
           </div>
-          <div className="h-full rounded-lg">
+          <div className="h-[30%] rounded-lg ">
             <LazyLoadImage
               src={bridge}
               className="h-full w-full rounded-lg object-contain"
