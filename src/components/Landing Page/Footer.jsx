@@ -4,7 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Footer() {
   return (
-    <div className="h-[10vh] bg-maindark flex items-center justify-center text-graytext gap-8">
+    <div className="h-[10vh] bg-maindark  flex items-center justify-center text-graytext gap-8">
       <p>&copy;Samuel Ethan Bonghanoy 2023</p>
       <div className="flex gap-2">
         <a
