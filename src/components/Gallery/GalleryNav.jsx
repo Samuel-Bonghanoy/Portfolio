@@ -15,7 +15,7 @@ function GalleryNav() {
       <NavLink className="ml-[2%] flex items-center" to="/">
         <img className="h-[57%] w-[17%] " src={devLogo} />
       </NavLink>
-      <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[20%]">
+      <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[35%]">
         <div className="flex gap-8">
           <NavLink
             className={({ isActive, isPending, isTransitioning }) =>
@@ -43,6 +43,34 @@ function GalleryNav() {
           >
             <p className=" duration-100 hover:cursor-pointer hover:text-crimson">
               contact
+            </p>
+          </NavLink>
+          <NavLink
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? "pending text-maindark" : "",
+                isActive ? "active text-crimson" : "text-maindark",
+                isTransitioning ? "transitioning text-maindark" : "",
+              ].join(" ")
+            }
+            to="/portfolio"
+          >
+            <p className="duration-100 hover:cursor-pointer hover:text-crimson">
+              portfolio
+            </p>
+          </NavLink>
+          <NavLink
+            className={({ isActive, isPending, isTransitioning }) =>
+              [
+                isPending ? "pending text-maindark" : "",
+                isActive ? "active text-crimson" : "text-maindark",
+                isTransitioning ? "transitioning text-maindark" : "",
+              ].join(" ")
+            }
+            to="/gallery"
+          >
+            <p className="duration-100 hover:cursor-pointer hover:text-crimson">
+              gallery
             </p>
           </NavLink>
         </div>
