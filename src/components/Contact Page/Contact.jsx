@@ -6,14 +6,14 @@ function Contact() {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 1.5 } }}
-        exit={{ opacity: 0 }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1, transition: { duration: 1.5 } }}
+        // exit={{ opacity: 0 }}
         className="overflow-x-hidden shadow-maindark"
       >
         <div className="h-[100vh] w-screen grid grid-cols-[0.40fr_0.60fr] overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
           <motion.div
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 1, x: -150 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
             exit={{ opacity: 0, x: -150 }}
             className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg hover:scale-[1.01] hover:scale-x-[1.02] hover:z-[60]"
@@ -22,7 +22,7 @@ function Contact() {
           </motion.div>
           <motion.div
             variants={{
-              hidden: { opacity: 0, x: 200 },
+              hidden: { opacity: 1, x: 200 },
               visible: { opacity: 1, x: 0, transition: { duration: 0.1 } },
             }}
             initial="hidden"
