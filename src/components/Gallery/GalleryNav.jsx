@@ -2,10 +2,16 @@ import devLogo from "../../assets/Dev_logo_red_o.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function GalleryNav() {
   return (
-    <div className="w-full h-[12%] z-[70]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.75 } }}
+      exit={{ opacity: 0, x: -150 }}
+      className="w-full h-[12%] z-[70]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden"
+    >
       <NavLink className="ml-[2%] flex items-center" to="/">
         <img className="h-[57%] w-[17%] " src={devLogo} />
       </NavLink>
@@ -14,9 +20,9 @@ function GalleryNav() {
           <NavLink
             className={({ isActive, isPending, isTransitioning }) =>
               [
-                isPending ? "pending text-mainwhite" : "",
-                isActive ? "active text-crimson" : "text-mainwhite",
-                isTransitioning ? "transitioning text-mainwhite" : "",
+                isPending ? "pending text-maindark" : "",
+                isActive ? "active text-crimson" : "text-maindark",
+                isTransitioning ? "transitioning text-maindark" : "",
               ].join(" ")
             }
             to="/about"
@@ -29,9 +35,9 @@ function GalleryNav() {
             to="/contact"
             className={({ isActive, isPending, isTransitioning }) =>
               [
-                isPending ? "pending text-mainwhite" : "",
-                isActive ? "active text-crimson" : "text-mainwhite",
-                isTransitioning ? "transitioning text-mainwhite" : "",
+                isPending ? "pending text-maindark" : "",
+                isActive ? "active text-crimson" : "text-maindark",
+                isTransitioning ? "transitioning text-maindark" : "",
               ].join(" ")
             }
           >
@@ -49,7 +55,7 @@ function GalleryNav() {
               sx={{
                 width: "2rem",
                 height: "2rem",
-                fill: "#f4f4f4",
+                fill: "#222111",
                 "&:hover": { fill: "#961418" },
               }}
             />
@@ -62,14 +68,14 @@ function GalleryNav() {
               sx={{
                 width: "2rem",
                 height: "2rem",
-                fill: "#f4f4f4",
+                fill: "#222111",
                 "&:hover": { fill: "#961418" },
               }}
             />
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
