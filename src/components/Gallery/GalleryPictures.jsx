@@ -5,7 +5,7 @@ import hp1 from "/hp1.png";
 function GalleryPictures() {
   return (
     <div className="bg-subwhite border-t-[0.15rem] border-textgray">
-      <div className="grid w-[80%] mx-auto py-[2%] grid-cols-2 md:grid-cols-5 gap-4">
+      <div className="grid w-[80%] mx-auto py-[6%] grid-cols-2 md:grid-cols-5 gap-4">
         {/* 1 */}
         <div className="grid grid-rows-[0.4fr_0.25fr_0.35fr] gap-4">
           <div>
