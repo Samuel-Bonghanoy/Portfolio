@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CV from "/Bonghanoy_CV.pdf";
 
 function DeveloperSection() {
   return (
@@ -14,13 +15,21 @@ function DeveloperSection() {
             in the Philippines.
           </p>
           <div className="pt-[10%] justify-self-end">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 500 }}
-              className="rounded-lg border-4 border-solid text-maindark w-[12rem] px-2 py-3 shadow-mainwhite shadow-sm border-mainwhite self-center justify-self-end text-lg font-bold bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite "
+            <a
+              href={CV}
+              download="Example-PDF-document"
+              target="_blank"
+              rel="noopener
+              noreferrer"
             >
-              download my CV
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 500 }}
+                className="rounded-lg border-4 border-solid text-maindark w-[12rem] px-2 py-3 shadow-mainwhite shadow-sm border-mainwhite self-center justify-self-end text-lg font-bold bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite "
+              >
+                download my CV
+              </motion.button>
+            </a>
           </div>
         </div>
       </div>
