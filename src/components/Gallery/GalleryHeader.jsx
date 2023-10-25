@@ -25,8 +25,9 @@ function GalleryHeader() {
             }}
             className="text-lg text-gray-600 mt-2 max-w-[45ch] font-normal"
           >
-            I love taking pictures of landscapes, streets, and buildings, most
-            especially when I travel. Here are some of my best shots.
+            One of my biggest hobbies is capturing landscapes, streets, and
+            buildings with a camera, most especially when I travel. Here are
+            some of my best shots.
           </motion.p>
         </div>
       </motion.div>
