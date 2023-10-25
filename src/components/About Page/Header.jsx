@@ -23,7 +23,7 @@ function Header() {
               x: 0,
               transition: { duration: 0.5, delay: 0.5 },
             }}
-            className="text-lg text-graytext mt-2 max-w-[64ch] font-normal"
+            className="text-lg text-gray-600 mt-2 max-w-[64ch] font-normal"
           >
             I am a Computer Science student from the University of San Carlos,
             and an aspiring{" "}
