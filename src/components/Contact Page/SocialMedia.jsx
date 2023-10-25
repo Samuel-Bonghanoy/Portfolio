@@ -3,6 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import EmailIcon from "@mui/icons-material/Email";
 import { motion } from "framer-motion";
 import { useAnimate, stagger } from "framer-motion";
 import { useEffect } from "react";
@@ -119,6 +120,26 @@ function SocialMedia() {
           className="hover:cursor-pointer"
         >
           <TwitterIcon
+            sx={{
+              width: "2.7rem",
+              height: "2.7rem",
+              fill: "#f4f4f4",
+              "&:hover": { fill: "#961418" },
+            }}
+          />
+        </a>
+      </motion.li>
+      <motion.li
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ type: "spring" }}
+      >
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox"
+          className="hover:cursor-pointer"
+        >
+          <EmailIcon
             sx={{
               width: "2.7rem",
               height: "2.7rem",
