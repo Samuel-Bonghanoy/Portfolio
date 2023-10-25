@@ -3,6 +3,7 @@ import AppLayout from "./components/UI/AppLayout";
 import LandingPage from "./components/Landing Page/LandingPage";
 import About from "./components/About Page/About";
 import Contact from "./components/Contact Page/Contact";
+import Gallery from "./components/Gallery/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
     ],
   },
