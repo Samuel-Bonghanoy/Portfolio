@@ -1,15 +1,8 @@
 function Gallery() {
   return (
-    <div>
+    <div className="bg-mainwhite">
       <div className="grid w-[80%] mx-auto py-[2%] grid-cols-2 md:grid-cols-4 gap-4">
         <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night1.png"
-              alt=""
-            />
-          </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
@@ -19,8 +12,15 @@ function Gallery() {
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-[14rem] w-auto max-w-full rounded-lg object-fit"
               src="/night3.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="/silhouette1.png"
               alt=""
             />
           </div>
@@ -28,15 +28,15 @@ function Gallery() {
         <div className="grid gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night1.png"
+              className="h-[105%] max-w-full rounded-lg"
+              src="/hp1.png"
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night2.png"
+              className="h-[100%] max-w-full rounded-lg"
+              src="/hp2.png"
               alt=""
             />
           </div>
