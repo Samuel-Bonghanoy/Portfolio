@@ -1,5 +1,5 @@
 import night1 from "/night1.png";
-import grass from "/grass.png";
+import grass from "/dreamy.jpg";
 import hp1 from "/hp1.png";
 
 function GalleryPictures() {
@@ -11,21 +11,21 @@ function GalleryPictures() {
           <div>
             <img
               className="h-full max-w-full rounded-lg"
-              src="/night2.png"
+              src="/hamilton.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-[14rem] w-auto max-w-full rounded-lg object-fit"
-              src="/night3.png"
+              src="/night2.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/silhouette1.png"
+              src="/silhouette.png"
               alt=""
             />
           </div>
