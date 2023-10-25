@@ -1,7 +1,7 @@
 function Gallerry() {
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid w-[80%] mx-auto py-[2%] grid-cols-2 md:grid-cols-4 gap-4">
         <div className="grid gap-4">
           <div>
             <img
