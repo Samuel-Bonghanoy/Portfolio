@@ -1,5 +1,6 @@
 import night1 from "/night1.png";
 import grass from "/grass.png";
+import hp1 from "/hp1.png";
 
 function Gallery() {
   return (
@@ -38,7 +39,53 @@ function Gallery() {
           ></div>
           <div
             style={{
+              backgroundImage: `url(${hp1}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full w-full"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${night1}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full "
+          ></div>
+        </div>
+        <div className="grid grid-rows-[0.35fr_0.35fr_0.20fr] gap-4">
+          <div
+            style={{
               backgroundImage: `url(${grass}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full rounded-lg"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${hp1}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full w-full"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${night1}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full "
+          ></div>
+        </div>
+        <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
+          <div
+            style={{
+              backgroundImage: `url(${grass}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full rounded-lg"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${hp1}`,
               backgroundSize: "cover",
             }}
             className="h-full w-full"
