@@ -1,11 +1,14 @@
+import night1 from "/night1.png";
+import grass from "/grass.png";
+
 function Gallery() {
   return (
     <div className="bg-mainwhite">
       <div className="grid w-[80%] mx-auto py-[2%] grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="grid gap-4">
+        <div className="grid grid-rows-[0.4fr_0.25fr_0.35fr] gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-full max-w-full rounded-lg"
               src="/night2.png"
               alt=""
             />
@@ -25,74 +28,28 @@ function Gallery() {
             />
           </div>
         </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-[105%] max-w-full rounded-lg"
-              src="/hp1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-[100%] max-w-full rounded-lg"
-              src="/hp2.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night3.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night2.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night3.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night2.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/night3.png"
-              alt=""
-            />
-          </div>
+        <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
+          <div
+            style={{
+              backgroundImage: `url(${grass}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full rounded-lg"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${grass}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full w-full"
+          ></div>
+          <div
+            style={{
+              backgroundImage: `url(${night1}`,
+              backgroundSize: "cover",
+            }}
+            className="h-full "
+          ></div>
         </div>
       </div>
     </div>
