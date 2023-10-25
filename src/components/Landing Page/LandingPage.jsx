@@ -6,7 +6,6 @@ import Card from "../UI/Card";
 import Footer from "./Footer";
 
 import { motion } from "framer-motion";
-import Gallery from "../Gallery/Gallery";
 
 function LandingPage() {
   return (
@@ -58,7 +57,7 @@ function LandingPage() {
           ))}
         </div>
       </motion.div>
-      <Gallery />
+
       <Footer />
     </motion.div>
   );
