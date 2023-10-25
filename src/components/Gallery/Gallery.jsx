@@ -6,6 +6,7 @@ function Gallery() {
   return (
     <div className="bg-mainwhite">
       <div className="grid w-[80%] mx-auto py-[2%] grid-cols-2 md:grid-cols-4 gap-4">
+        {/* 1 */}
         <div className="grid grid-rows-[0.4fr_0.25fr_0.35fr] gap-4">
           <div>
             <img
@@ -29,6 +30,7 @@ function Gallery() {
             />
           </div>
         </div>
+        {/* 2 */}
         <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
           <div
             style={{
@@ -52,6 +54,7 @@ function Gallery() {
             className="h-full "
           ></div>
         </div>
+        {/* 3 */}
         <div className="grid grid-rows-[0.35fr_0.35fr_0.20fr] gap-4">
           <div
             style={{
@@ -75,6 +78,7 @@ function Gallery() {
             className="h-full "
           ></div>
         </div>
+        {/* 4 */}
         <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
           <div
             style={{
