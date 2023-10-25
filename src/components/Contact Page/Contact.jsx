@@ -16,7 +16,12 @@ function Contact() {
             initial={{ opacity: 1, x: -150 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
             exit={{ opacity: 0, x: -150 }}
-            className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg hover:scale-[1.01] hover:scale-x-[1.02] hover:z-[60]"
+            whileHover={{
+              scale: 1.03,
+              zIndex: 60,
+              transition: { duration: 0.05 },
+            }}
+            className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg hover:scale-[1.01] hover:scale-x-[1.02] "
           >
             <ContactHeader />
           </motion.div>
