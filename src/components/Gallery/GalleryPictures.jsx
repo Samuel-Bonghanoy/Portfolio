@@ -1,6 +1,15 @@
 import night1 from "/night1.jpg";
 import grass from "/dreamy.jpg";
 import hp1 from "/hp1.jpg";
+import bridge from "/bridge.jpg";
+import clock from "/clock.jpg";
+import city from "/city.jpg";
+import crow from "/crow.jpg";
+import Tower from "/Tower2.jpg";
+import docks from "/docks.jpg";
+import hp2 from "/hp2.jpg";
+import hp3 from "/hp3.jpg";
+import spicy from "/spicy.jpg";
 
 function GalleryPictures() {
   return (
@@ -34,14 +43,14 @@ function GalleryPictures() {
         <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
           <div
             style={{
-              backgroundImage: `url(${grass}`,
+              backgroundImage: `url(${hp2}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
           ></div>
           <div
             style={{
-              backgroundImage: `url(${hp1}`,
+              backgroundImage: `url(${city}`,
               backgroundSize: "cover",
             }}
             className="h-full w-full rounded-lg"
@@ -55,24 +64,24 @@ function GalleryPictures() {
           ></div>
         </div>
         {/* 3 */}
-        <div className="grid grid-rows-[0.20fr_0.35fr_0.45fr] gap-4">
+        <div className="grid grid-rows-[0.15fr_0.40fr_0.45fr] gap-4">
           <div
             style={{
-              backgroundImage: `url(${night1}`,
+              backgroundImage: `url(${docks}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
           ></div>
           <div
             style={{
-              backgroundImage: `url(${hp1}`,
+              backgroundImage: `url(${crow}`,
               backgroundSize: "cover",
             }}
             className="h-full w-full rounded-lg"
           ></div>
           <div
             style={{
-              backgroundImage: `url(${grass}`,
+              backgroundImage: `url(${Tower}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
@@ -82,17 +91,17 @@ function GalleryPictures() {
         <div className="grid grid-rows-[0.40fr_0.25fr_0.35fr] gap-4">
           <div
             style={{
-              backgroundImage: `url(${grass}`,
+              backgroundImage: `url(${hp3}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
           ></div>
           <div
             style={{
-              backgroundImage: `url(${night1}`,
+              backgroundImage: `url(${clock}`,
               backgroundSize: "cover",
             }}
-            className="h-full w-full rounded-lg"
+            className="h-full w-full rounded-lg object-fit"
           ></div>
           <div
             style={{
@@ -102,7 +111,7 @@ function GalleryPictures() {
             className="h-full rounded-lg"
           ></div>
         </div>
-        <div className="grid grid-rows-[0.60fr_0.15fr_0.25fr] gap-4">
+        <div className="grid grid-rows-[0.50fr_0.15fr_0.35fr] gap-4">
           <div
             style={{
               backgroundImage: `url(${grass}`,
@@ -112,14 +121,14 @@ function GalleryPictures() {
           ></div>
           <div
             style={{
-              backgroundImage: `url(${night1}`,
+              backgroundImage: `url(${spicy}`,
               backgroundSize: "cover",
             }}
             className="h-full w-full rounded-lg"
           ></div>
           <div
             style={{
-              backgroundImage: `url(${hp1}`,
+              backgroundImage: `url(${bridge}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
