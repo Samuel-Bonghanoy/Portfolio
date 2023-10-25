@@ -1,3 +1,4 @@
+import Navbar from "../UI/Navbar";
 import Header from "./Header";
 import Hero from "./Hero";
 // import LandingDivider from "../Landing Page/LandingDivider";
@@ -10,6 +11,7 @@ function About() {
   return (
     <>
       <AnimatePresence>
+        <Navbar />
         <motion.div
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1, transition: { duration: 1.2 } }}

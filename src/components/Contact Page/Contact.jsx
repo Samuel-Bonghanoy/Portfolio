@@ -1,3 +1,4 @@
+import Navbar from "../UI/Navbar";
 import ContactHeader from "./ContactHeader";
 import ContactMethods from "./ContactMethods";
 import { motion, AnimatePresence } from "framer-motion";
@@ -5,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function Contact() {
   return (
     <AnimatePresence>
+      <Navbar />
       <motion.div
         // initial={{ opacity: 0 }}
         // animate={{ opacity: 1, transition: { duration: 1.5 } }}
