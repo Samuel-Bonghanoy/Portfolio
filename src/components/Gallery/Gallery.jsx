@@ -1,3 +1,4 @@
+import Footer from "../Landing Page/Footer";
 import GalleryHeader from "./GalleryHeader";
 import GalleryNav from "./GalleryNav";
 import GalleryPictures from "./GalleryPictures";
@@ -19,7 +20,8 @@ function Gallery() {
           </motion.div>
         </div>
       </motion.div>
-      {/* <GalleryPictures /> */}
+      <GalleryPictures />
+      <Footer />
     </>
   );
 }
