@@ -17,7 +17,7 @@ function DeveloperSection() {
           <div className="pt-[10%] justify-self-end">
             <a
               href={CV}
-              download="Example-PDF-document"
+              download="Samuel_Bonghanoy_Curriculum_Vitae"
               target="_blank"
               rel="noopener
               noreferrer"
