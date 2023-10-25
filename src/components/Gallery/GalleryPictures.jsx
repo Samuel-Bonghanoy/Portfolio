@@ -11,6 +11,9 @@ import hp2 from "/hp2.jpg";
 import hp3 from "/hp3.jpg";
 import spicy from "/spicy.jpg";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 function GalleryPictures() {
   return (
     <div className="bg-subwhite border-t-[0.15rem] border-textgray">
@@ -18,36 +21,40 @@ function GalleryPictures() {
         {/* 1 */}
         <div className="grid grid-rows-[0.4fr_0.25fr_0.35fr] gap-4">
           <div>
-            <img
+            <LazyLoadImage
               className="h-full max-w-full rounded-lg"
               src="/hamilton.jpg"
+              effect="blur"
               alt=""
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               className="h-[14rem] w-auto max-w-full rounded-lg object-fit"
               src="/night2.jpg"
+              effect="blur"
               alt=""
             />
           </div>
           <div>
-            <img
+            <LazyLoadImage
               className="h-auto max-w-full rounded-lg"
               src="/silhouette.jpg"
+              effect="blur"
               alt=""
             />
           </div>
         </div>
         {/* 2 */}
         <div className="grid grid-rows-[0.45fr_0.35fr_0.20fr] gap-4">
-          <div
+          <LazyLoadImage
+            effect="blur"
             style={{
               backgroundImage: `url(${hp2}`,
               backgroundSize: "cover",
             }}
             className="h-full rounded-lg"
-          ></div>
+          ></LazyLoadImage>
           <div
             style={{
               backgroundImage: `url(${city}`,
