@@ -44,7 +44,7 @@ function Circles() {
   }, []);
 
   return (
-    <>
+    <div className="sm:hidden md:block">
       <div className="circle"></div>
       <div className="circle"></div>
       <div className="circle"></div>
@@ -85,7 +85,7 @@ function Circles() {
       <div className="circle"></div>
       <div className="circle"></div>
       <div className="circle"></div>
-    </>
+    </div>
   );
 }
 
