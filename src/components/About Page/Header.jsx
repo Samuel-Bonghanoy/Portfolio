@@ -11,11 +11,13 @@ function Header() {
           transition: { duration: 0.5, delay: 0.3 },
         }}
         exit={{ opacity: 0, x: -150 }}
-        className="pt-[15%] text-darktext flex flex-col h-[100%] shadow-mainwhite shadow-lg"
+        className="sm:pt-[22%] mx-auto md:pt-[15%] pb-8 text-darktext flex flex-col h-[100%] shadow-mainwhite shadow-lg"
       >
         <div className="flex flex-col gap-5 font-bold mx-auto">
-          <h1 className="text-noto text-6xl font-bold">バックグラウンド</h1>
-          <h1 className="font-black text-8xl mb-3">about.</h1>
+          <h1 className="text-noto sm:text-4xl md:text-6xl font-bold">
+            バックグラウンド
+          </h1>
+          <h1 className="font-black sm:text-7xl md:text-8xl mb-3">about.</h1>
           <motion.p
             initial={{ opacity: 0, x: -150 }}
             animate={{
@@ -23,7 +25,7 @@ function Header() {
               x: 0,
               transition: { duration: 0.5, delay: 0.5 },
             }}
-            className="text-lg text-gray-600 mt-2 max-w-[64ch] font-normal"
+            className="sm:text-sm md:text-lg text-gray-600 mt-2 sm:max-w-[45ch] md:max-w-[64ch] font-normal"
           >
             I am a Computer Science student from the University of San Carlos,
             and an aspiring{" "}
@@ -42,7 +44,7 @@ function Header() {
               x: 0,
               transition: { duration: 0.5, delay: 0.5 },
             }}
-            className="text-lg text-gray-600 mt-2 max-w-[64ch] font-normal"
+            className="sm:text-sm md:text-lg text-gray-600 mt-2 sm:max-w-[45ch] md:max-w-[64ch] font-normal"
           >
             I am constantly looking for opportunities to learn, to hone my
             skills, and to connect with other people as a developer. Seeking out

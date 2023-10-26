@@ -17,7 +17,9 @@ function Card({ project }) {
             <div className="badge bg-crimson text-mainwhite h-full">NEW</div>
           )}
         </h2>
-        <p className="text-xs">{project.description}</p>
+        <p className="sm:text-xs md:text-sm text-graytext ">
+          {project.description}
+        </p>
         <div className="card-actions justify-end">
           <a href={project.repo}>
             <SendToMobileIcon
