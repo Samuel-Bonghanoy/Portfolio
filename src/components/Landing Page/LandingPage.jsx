@@ -18,7 +18,7 @@ function LandingPage() {
         exit={{ opacity: 0 }}
         className="overflow-x-hidden shadow-maindark"
       >
-        <div className="h-[75vh] w-screen grid md:grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
+        <div className="sm:gap-2 sm:pb-5 md:h-[75vh] w-screen grid md:grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
           <motion.div
             initial={{ opacity: 0, x: -250 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}
@@ -28,7 +28,7 @@ function LandingPage() {
               zIndex: 60,
               transition: { duration: 0.05 },
             }}
-            className="bg-mainwhite  transition-all duration-500 z-50  shadow-maindark shadow-lg"
+            className="bg-mainwhite transition-all duration-500 z-50  shadow-maindark shadow-lg"
           >
             <PhotographySection />
           </motion.div>

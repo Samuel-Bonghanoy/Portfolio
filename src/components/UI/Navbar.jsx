@@ -13,9 +13,9 @@ function Navbar() {
       className="w-full h-[12%] z-[70]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden"
     >
       <NavLink className="ml-[2%] flex items-center" to="/">
-        <img className="h-[57%] w-[17%] " src={devLogo} />
+        <img className="h-[57%] sm:w-[40%] md:w-[17%] " src={devLogo} />
       </NavLink>
-      <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[25%]">
+      <div className="flex gap-20 items-center mr-[2%] sm:text-xs font-raleway font-semibold w-[25%]">
         <div className="flex gap-8">
           <NavLink
             className={({ isActive, isPending, isTransitioning }) =>
@@ -41,7 +41,7 @@ function Navbar() {
               ].join(" ")
             }
           >
-            <p className=" duration-100 hover:cursor-pointer hover:text-crimson">
+            <p className="sm:text-maindark duration-100 hover:cursor-pointer hover:text-crimson">
               contact
             </p>
           </NavLink>
