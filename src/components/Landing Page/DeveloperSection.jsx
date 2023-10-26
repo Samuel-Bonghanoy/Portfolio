@@ -27,7 +27,7 @@ function DeveloperSection() {
                 transition={{ type: "spring", stiffness: 500 }}
                 className="rounded-lg border-4 border-solid text-maindark w-[12rem] px-2 py-3 shadow-mainwhite shadow-sm border-mainwhite self-center justify-self-end text-lg font-bold bg-mainwhite hover:cursor-pointer duration-100 hover:shadow-mainwhite "
               >
-                download my CV
+                download my cv
               </motion.button>
             </a>
           </div>
