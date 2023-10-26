@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 function Form() {
   const [state, handleSubmit] = useForm("xdorbdze");
@@ -23,19 +23,11 @@ function Form() {
         >
           <div className="flex-1 w-0 p-4">
             <div className="flex items-start">
-              <div className="flex-shrink-0 pt-0.5">
-                <img
-                  className="h-10 w-10 rounded-full"
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-                  alt=""
-                />
-              </div>
+              <div className="flex-shrink-0 pt-0.5"></div>
               <div className="ml-3 flex-1">
-                <p className="text-sm font-medium text-gray-900">
-                  Emilia Gates
-                </p>
+                <p className="text-sm font-medium text-crimson">Sethonne</p>
                 <p className="mt-1 text-sm text-gray-500">
-                  Sure! 8:30pm works great!
+                  Thank you for contacting me!
                 </p>
               </div>
             </div>
@@ -43,7 +35,7 @@ function Form() {
           <div className="flex border-l border-gray-200">
             <button
               onClick={() => toast.dismiss(t.id)}
-              className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-crimson hover:text-maindark focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               Close
             </button>
@@ -55,6 +47,9 @@ function Form() {
 
   return (
     <>
+      <div>
+        <Toaster position="bottom-right" reverseOrder={false} />
+      </div>
       <h1 className="w-[80%] mx-auto text-3xl mb-[1rem] text-mainwhite font-bold">
         Send me an email
       </h1>
