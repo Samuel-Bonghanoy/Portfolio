@@ -22,13 +22,15 @@ function Navbar() {
               className={({ isActive, isPending, isTransitioning }) =>
                 [
                   isPending ? "pending text-mainwhite" : "",
-                  isActive ? "active text-crimson" : "text-mainwhite",
+                  isActive
+                    ? "active text-crimson"
+                    : "text-mainwhite sm:text-maindark md:text-mainwhite",
                   isTransitioning ? "transitioning text-mainwhite" : "",
                 ].join(" ")
               }
               to="/about"
             >
-              <p className="sm:text-maindark md:text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
+              <p className=" duration-100 hover:cursor-pointer hover:text-crimson">
                 about
               </p>
             </NavLink>
@@ -39,12 +41,14 @@ function Navbar() {
               className={({ isActive, isPending, isTransitioning }) =>
                 [
                   isPending ? "pending text-mainwhite" : "",
-                  isActive ? "active text-crimson" : "text-mainwhite",
+                  isActive
+                    ? "active text-crimson"
+                    : "text-mainwhite md:text-mainwhite sm:text-maindark ",
                   isTransitioning ? "transitioning text-mainwhite" : "",
                 ].join(" ")
               }
             >
-              <p className="sm:text-maindark md:text-mainwhite  duration-100 hover:cursor-pointer hover:text-crimson">
+              <p className="  duration-100 hover:cursor-pointer hover:text-crimson">
                 contact
               </p>
             </NavLink>
@@ -54,13 +58,15 @@ function Navbar() {
               className={({ isActive, isPending, isTransitioning }) =>
                 [
                   isPending ? "pending text-mainwhite" : "",
-                  isActive ? "active text-crimson" : "text-mainwhite",
+                  isActive
+                    ? "active text-crimson"
+                    : "text-mainwhite sm:text-maindark md:text-mainwhite",
                   isTransitioning ? "transitioning text-mainwhite" : "",
                 ].join(" ")
               }
               to="/gallery"
             >
-              <p className="sm:text-maindark md:text-mainwhite  duration-100 hover:cursor-pointer  hover:text-crimson">
+              <p className="  duration-100 hover:cursor-pointer  hover:text-crimson">
                 gallery
               </p>
             </NavLink>
