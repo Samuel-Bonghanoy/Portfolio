@@ -2,7 +2,7 @@ import SendToMobileIcon from "@mui/icons-material/SendToMobile";
 
 function Card({ project }) {
   return (
-    <div className="rounded-md w-96 bg-maindark shadow-xl shadow-stone-400 flex flex-col text-mainwhite hover:scale-[1.03] transition-all duration-300 hover:shadow-gray-600">
+    <div className="rounded-md sm:w-50 md:w-96 bg-maindark shadow-xl shadow-stone-400 flex flex-col text-mainwhite hover:scale-[1.03] transition-all duration-300 hover:shadow-gray-600">
       <div className="h-52 bg">
         <img
           src={`/${project.imageUrl}`}
@@ -17,7 +17,7 @@ function Card({ project }) {
             <div className="badge bg-crimson text-mainwhite h-full">NEW</div>
           )}
         </h2>
-        <p>{project.description}</p>
+        <p className="text-xs">{project.description}</p>
         <div className="card-actions justify-end">
           <a href={project.repo}>
             <SendToMobileIcon
