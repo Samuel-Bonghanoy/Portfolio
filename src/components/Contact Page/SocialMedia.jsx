@@ -27,7 +27,7 @@ function SocialMedia() {
       }}
       initial="visible"
       transition={{ staggerChildren: 0.5 }}
-      className="mt-2 flex gap-5 w-[80%] items-start mx-auto"
+      className="mt-2 flex gap-5 sm:w-full md:w-[80%] mb-8 items-center sm:justify-center md:justify-start mx-auto"
     >
       <motion.li
         initial={{ opacity: 0, scale: 0.5 }}

@@ -112,7 +112,7 @@ function Form() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 500 }}
-          className="self-end mt-2 bg-crimson w-[20%] text-mainwhite rounded-md px-4 py-[0.6rem]"
+          className="self-end mt-2 bg-crimson md:w-[20%] text-mainwhite rounded-md px-4 py-[0.6rem]"
           type="submit"
           disabled={state.submitting || state.succeeded}
         >
