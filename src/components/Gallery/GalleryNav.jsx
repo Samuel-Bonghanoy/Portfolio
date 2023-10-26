@@ -13,10 +13,10 @@ function GalleryNav() {
       className="w-full h-[12%] z-[70]  flex items-center justify-between bg-mainwhite backdrop-blur-[2px] bg-opacity-5 absolute overflow-x-hidden"
     >
       <NavLink className="ml-[2%] flex items-center" to="/">
-        <img className="h-[57%] w-[17%] " src={devLogo} />
+        <img className="h-[57%] sm:w-[48%] md:w-[17%]" src={devLogo} />
       </NavLink>
-      <div className="flex gap-20 items-center mr-[2%] font-raleway font-semibold w-[25%]">
-        <div className="flex gap-8">
+      <div className="flex sm:gap-10 md:gap-20 items-center mr-[2%] font-raleway sm:text-xs md:text-[1rem] font-semibold sm:w-[45%] md:w-[25%]">
+        <div className="flex sm:flex md:flex-row sm:gap-5 md:gap-8">
           <NavLink
             className={({ isActive, isPending, isTransitioning }) =>
               [
