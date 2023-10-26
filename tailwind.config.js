@@ -7,10 +7,10 @@ export default {
     extend: {
       screens: {
         sm: "380px",
-        // => @media (min-width: 640px) { ... }
+        // => @media (min-width: 380px) { ... }
 
         md: "640px",
-        // => @media (min-width: 768px) { ... }
+        // => @media (min-width: 640px) { ... }
 
         lg: "1024px",
         // => @media (min-width: 1024px) { ... }
