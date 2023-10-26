@@ -15,7 +15,7 @@ function Navbar() {
       <NavLink className="ml-[2%] flex items-center" to="/">
         <img className="h-[57%] sm:w-[48%] md:w-[17%] " src={devLogo} />
       </NavLink>
-      <div className="flex sm:gap-10 md:gap-20 items-center sm:mr-0 md:mr-[2%] sm:text-xs font-raleway font-semibold sm:w-[45%] md:w-[25%]">
+      <div className="flex sm:gap-10 md:gap-20 items-center sm:mr-0 md:mr-[2%] sm:text-xs md:text-[1rem] font-raleway font-semibold sm:w-[45%] md:w-[25%]">
         <ul className=" flex sm:flex md:flex-row sm:gap-5 md:gap-8">
           <li>
             <NavLink
@@ -28,7 +28,7 @@ function Navbar() {
               }
               to="/about"
             >
-              <p className="sm:text-maindark duration-100 hover:cursor-pointer hover:text-crimson">
+              <p className="sm:text-maindark md:text-mainwhite duration-100 hover:cursor-pointer hover:text-crimson">
                 about
               </p>
             </NavLink>
@@ -44,7 +44,7 @@ function Navbar() {
                 ].join(" ")
               }
             >
-              <p className="sm:text-maindark  duration-100 hover:cursor-pointer hover:text-crimson">
+              <p className="sm:text-maindark md:text-mainwhite  duration-100 hover:cursor-pointer hover:text-crimson">
                 contact
               </p>
             </NavLink>
@@ -60,7 +60,7 @@ function Navbar() {
               }
               to="/gallery"
             >
-              <p className="sm:text-maindark  duration-100 hover:cursor-pointer  hover:text-crimson">
+              <p className="sm:text-maindark md:text-mainwhite  duration-100 hover:cursor-pointer  hover:text-crimson">
                 gallery
               </p>
             </NavLink>
@@ -69,7 +69,7 @@ function Navbar() {
         <div className="flex gap-5">
           <a
             href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
-            className="hover:cursor-pointer sm:hidden"
+            className="hover:cursor-pointer sm:hidden md:block"
           >
             <LinkedInIcon
               sx={{
@@ -82,7 +82,7 @@ function Navbar() {
           </a>
           <a
             href="https://github.com/Samuel-Bonghanoy"
-            className="hover:cursor-pointer sm:hidden"
+            className="hover:cursor-pointer sm:hidden md:block"
           >
             <GitHubIcon
               sx={{
