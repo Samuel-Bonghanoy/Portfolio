@@ -18,7 +18,7 @@ function LandingPage() {
         exit={{ opacity: 0 }}
         className="overflow-x-hidden shadow-maindark"
       >
-        <div className="h-[75vh] w-screen grid grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
+        <div className="h-[75vh] w-screen grid md:grid-cols-2 overflow-x-hidden overflow-y-hidden shadow-maindark shadow-lg">
           <motion.div
             initial={{ opacity: 0, x: -250 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.1 } }}

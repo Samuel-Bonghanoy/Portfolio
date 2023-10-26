@@ -58,5 +58,5 @@ export default {
       },
     },
   },
-  plugins: ["@tailwindcss/line-clamp", daisyui],
+  plugins: ["@tailwindcss/line-clamp", daisyui, "prettier-plugin-tailwindcss"],
 };
