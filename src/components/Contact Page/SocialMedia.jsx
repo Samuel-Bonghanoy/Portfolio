@@ -37,7 +37,7 @@ function SocialMedia() {
       >
         <a
           href="https://www.linkedin.com/in/samuel-bonghanoy-55283a250/"
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer "
         >
           <LinkedInIcon
             sx={{
@@ -137,7 +137,7 @@ function SocialMedia() {
       >
         <a
           href="https://mail.google.com/mail/u/0/#inbox"
-          className="hover:cursor-pointer"
+          className="hover:cursor-pointer sm:hidden md:block"
         >
           <EmailIcon
             sx={{
