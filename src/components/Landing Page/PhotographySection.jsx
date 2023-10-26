@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function PhotographySection() {
   return (
     <>
-      <div className="sm:pt-[22%] md:pt-[17%] text-darktext flex flex-col h-[100%] justify-between shadow-mainwhite shadow-lg">
+      <div className="sm:pt-[22%] md:pt-[17%] sm:pb-5 md:pb-0 text-darktext flex flex-col h-[100%] justify-between shadow-mainwhite shadow-lg">
         <div className="flex flex-col gap-5 font-bold mx-auto">
           <h1 className="text-noto sm:text-2xl md:text-4xl font-bold">
             フォトグラファー
