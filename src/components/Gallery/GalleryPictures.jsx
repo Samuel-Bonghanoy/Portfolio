@@ -12,9 +12,11 @@ import hp3 from "/hp3.jpg";
 import spicy from "/duck.jpg";
 
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Loader from "../UI/Loader";
 
 function GalleryPictures() {
   return (
@@ -28,12 +30,30 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              className="h-full max-w-full rounded-lg  transition-all duration-500 hover:scale-[1.03]"
-              src="/hamilton.jpg"
-              effect="blur"
-              alt=""
-            />
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className="h-full max-w-full rounded-lg  transition-all duration-500 hover:scale-[1.03]"
+                src="/hamilton.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.1 },
+            }}
+            className="w-full"
+          >
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className="h-[14rem] w-[19rem] max-w-full rounded-lg object-fit"
+                src="/moulin.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -41,12 +61,14 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              className="h-[14rem] w-auto max-w-full rounded-lg object-fit"
-              src="/night2.jpg"
-              effect="blur"
-              alt=""
-            />
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className="h-auto max-w-full rounded-lg"
+                src="/silhouette.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -54,12 +76,14 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              className="h-auto max-w-full rounded-lg"
-              src="/silhouette.jpg"
-              effect="blur"
-              alt=""
-            />
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className="h-auto max-w-full rounded-lg"
+                src="/soldier.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
           </motion.div>
         </div>
         {/* 2 */}
@@ -70,11 +94,13 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              effect="blur"
-              src={hp2}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                effect="blur"
+                src={hp2}
+                className="h-full rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -82,10 +108,12 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={city}
-              className="h-full w-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={city}
+                className="h-full w-full rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -93,10 +121,12 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={bridge}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={bridge}
+                className="h-full rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
         </div>
         {/* 3 */}
@@ -107,34 +137,52 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={docks}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={docks}
+                className="h-full rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
               scale: 1.02,
               transition: { duration: 0.1 },
             }}
-            className="h-[38%]"
+            className=""
           >
-            <LazyLoadImage
-              src={crow}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage src={crow} className=" rounded-lg"></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
               scale: 1.02,
               transition: { duration: 0.1 },
             }}
-            className="h-[30%]"
+            className=""
           >
-            <LazyLoadImage
-              src={Tower}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={Tower}
+                className=" rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.1 },
+            }}
+          >
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className="h-auto max-w-full rounded-lg"
+                src="/hp1.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
           </motion.div>
         </div>
         {/* 4 */}
@@ -144,19 +192,21 @@ function GalleryPictures() {
               scale: 1.02,
               transition: { duration: 0.1 },
             }}
-            className="h-[45%]"
+            className="h-[32%]"
           >
-            <LazyLoadImage
-              src={grass}
-              className="h-full rounded-lg"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={grass}
+                className="h-full rounded-lg"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
               scale: 1.02,
               transition: { duration: 0.1 },
             }}
-            className="h-[23%]"
+            className="h-[18%]"
           >
             <LazyLoadImage
               src={clock}
@@ -169,10 +219,27 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={hp1}
-              className="h-full w-full rounded-lg object-contain"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src="/fountain.jpg"
+                className="h-full w-full rounded-lg object-contain"
+              ></LazyLoadImage>
+            </Suspense>
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.1 },
+            }}
+          >
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                className=" max-w-full rounded-lg"
+                src="/night2.jpg"
+                effect="blur"
+                alt=""
+              />
+            </Suspense>
           </motion.div>
         </div>
         <div className="flex flex-col gap-4">
@@ -182,10 +249,12 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={hp3}
-              className="h-full w-full rounded-lg object-contain"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={hp3}
+                className="h-full w-full rounded-lg object-contain"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -193,10 +262,12 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={spicy}
-              className="h-full w-full rounded-lg object-contain"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={spicy}
+                className="h-full w-full rounded-lg object-contain"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
           <motion.div
             whileHover={{
@@ -204,10 +275,25 @@ function GalleryPictures() {
               transition: { duration: 0.1 },
             }}
           >
-            <LazyLoadImage
-              src={night1}
-              className="h-full w-full rounded-lg object-contain"
-            ></LazyLoadImage>
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src={night1}
+                className="h-full w-full rounded-lg object-contain"
+              ></LazyLoadImage>
+            </Suspense>
+          </motion.div>
+          <motion.div
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.1 },
+            }}
+          >
+            <Suspense fallback={<Loader />}>
+              <LazyLoadImage
+                src="/tunnel.jpg"
+                className="h-full w-full rounded-lg object-contain"
+              ></LazyLoadImage>
+            </Suspense>
           </motion.div>
         </div>
       </div>
