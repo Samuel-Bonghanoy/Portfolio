@@ -54,7 +54,7 @@ function LandingPage() {
           className="h-full pt-16 pb-24 gap-8 bg-subwhite  shadow-lg border-b border-r border-l border-2 flex flex-col items-center"
         >
           <LandingDivider />
-          <div className="flex gap-6 sm:flex-col md:flex-row">
+          <div className="flex gap-10 md:gap-6 sm:flex-col md:flex-row">
             {projects.map((p) => (
               <Card project={p} key={p.title} />
             ))}
