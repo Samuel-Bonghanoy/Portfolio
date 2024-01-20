@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "Paper Trails",
+    imageUrl: "paper-trails-logo-white.png",
+    description:
+      "A grievance system that promotes collaboration and actionable feedback",
+    tagOne: "React",
+    tagTwo: "Supabase",
+    new: true,
+    repo: "https://github.com/Samuel-Bonghanoy/Natoura",
+  },
+  {
     title: "Cabinscape",
     imageUrl: "cabinscape.png",
     description:
@@ -18,16 +28,6 @@ const projects = [
     tagTwo: "Pug",
     new: false,
     repo: "https://github.com/Samuel-Bonghanoy/Cabinscape",
-  },
-  {
-    title: "Kitsune",
-    imageUrl: "kitsune.png",
-    description:
-      "A full-stack blog app influenced by X and built with the MERN stack",
-    tagOne: "ExpressJS",
-    tagTwo: "React",
-    new: false,
-    repo: "https://github.com/Samuel-Bonghanoy/Kitsune",
   },
 ];
 
